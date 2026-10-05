@@ -19,6 +19,12 @@
             "role": "Developer",
             "email": "bird.dev@birdcode.in.rs",
             "homepage": "https://birdcode.tech"
+        },
+        {
+            "name": "Martin Kristensen",
+            "role": "Developer",
+            "email": "mkr@imh.dk",
+            "homepage": "https://filmogtro.dk"
         }
     ],
     "require": {
