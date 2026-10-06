@@ -50,7 +50,11 @@ plugin.tx_bcsimplerate {
         # cat=plugin.tx_bcsimplerate//a; type=string; label=Maximum rate number
         maxRateNumber = 5
         # cat=plugin.tx_bcsimplerate//a; type=string; label=Rate icon HTML
-        rateIconHtml = <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="heart" d="M20.336 38.238l-.001-.002C14.393 32.874 9.54 28.49 6.163 24.376 2.796 20.277 1 16.573 1 12.59 1 6.074 6.112 1 12.65 1c3.702 0 7.27 1.72 9.593 4.414l.757.878.757-.878C26.081 2.72 29.648 1 33.35 1 39.888 1 45 6.074 45 12.589c0 3.984-1.797 7.688-5.163 11.787-3.378 4.113-8.23 8.498-14.172 13.86l-.001.002L23 40.65l-2.664-2.413z" stroke="#36563D" stroke-width="2" fill="currentColor"/></svg>
+        rateIconHtml = <svg viewBox="0 0 576 512" aria-hidden="true"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 34.6-17.7 53.7l115.7 112-27.4 158.2c-4.6 26.5 23.2 47.4 46.4 34.1L288 439.6l157.9 82.6c23.2 12.3 51-8.7 46.4-34.1l-27.4-158.2 115.7-112c19-19.1 8.5-49.9-17.7-53.7L382 150.2 316.7 17.8c-11.7-22.6-43.9-22.6-55.6 0z"/></svg>
+
+
+
+        
         # cat=plugin.tx_bcsimplerate//a; type=string; label=Submit button icon HTML
         submitButtonIconHtml = 🦅
         # cat=plugin.tx_bcsimplerate//a; type=string; label=Thanks for rating message close icon
