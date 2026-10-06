@@ -120,10 +120,30 @@ document.addEventListener('DOMContentLoaded', function() {
                         const ratingRecordDataEl = document.querySelector('.rating_record-data');
 
                         if (data.ratingResults && ratingRecordDataEl && ratingCountEl) {
-                            ratingCountEl.textContent = ratingCountEl.textContent.replace(ratingCountEl.textContent.match(/\d+/)[0], data.ratingResults.numberOfRates);
-                            if (averageRatingStrongEl) averageRatingStrongEl.textContent = averageRatingStrongEl.textContent.replace(averageRatingStrongEl.textContent.match(/\d+/)[0], data.ratingResults.roundedResult);
-                        } else if (ratingRecordDataEl) {
-                            ratingRecordDataEl.innerHTML = '<div class="rating_record-data"><span class="average_rating"><strong>'+data.ratingResults.roundedResult+'/'+5+'</strong></span></div>';
+                            ratingCountEl.textContent = ratingCountEl.textContent.replace(
+                                ratingCountEl.textContent.match(/\d+/)[0],
+                                data.ratingResults.numberOfRates
+                            );
+
+                            if (averageRatingStrongEl) {
+                                averageRatingStrongEl.textContent = averageRatingStrongEl.textContent.replace(
+                                    averageRatingStrongEl.textContent.match(/\d+/)[0],
+                                    data.ratingResults.roundedResult
+                                );
+                            }
+                        } else if (ratingRecordDataEl && data.ratingResults) {
+                            const maxRateNumber = ratingSystemHearts.length;
+
+                            ratingRecordDataEl.innerHTML =
+                                '<div class="rating_record-data">' +
+                                    '<span class="average_rating">' +
+                                        '<strong>' +
+                                            data.ratingResults.roundedResult +
+                                            '/' +
+                                            maxRateNumber +
+                                        '</strong>' +
+                                    '</span>' +
+                                '</div>';
                         }
                         
                         if (dataRatingEl) dataRatingEl.setAttribute('data-rating', data.ratingResults.roundedResult);
